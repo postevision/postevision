@@ -1,0 +1,19 @@
+// تضمين مكتبة Twilio
+require 'vendor/autoload.php';  // إذا كنت تستخدم Composer
+
+use Twilio\Rest\Client;
+
+$sid    = "your_account_sid";
+$token  = "your_auth_token";
+$twilio = new Client($sid, $token);
+
+$message = $twilio->messages
+                 ->create(
+                     '+201234567890',  // رقم الهاتف المستلم
+                     [
+                         'from' => '+1987654321',  // رقم Twilio الخاص بك
+                         'body' => 'This is a test message from Twilio'
+                     ]
+                 );
+
+echo "Message sent: " . $message->sid;

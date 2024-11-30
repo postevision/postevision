@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PosteVision</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>PosteVision</h1>
+        <p>حلول ذكية لتوزيع السيولة في الجزائر بوست</p>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>من نحن؟</h2>
+            <p>نظام ذكي لتحليل البيانات والتنبؤ باحتياجات السيولة لـ 4200 مكتب بريد.</p>
+        </section>
+
+        <section id="features">
+            <h2>الميزات الرئيسية:</h2>
+            <ul>
+                <li>التنبؤ بالاحتياجات النقدية بدقة.</li>
+                <li>إدارة الطلبات بين الفروع والبنك المركزي.</li>
+                <li>تحليل الأمان وتقليل المخاطر.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 فريق PosteVision</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PosteVision</title>
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav>
+        <ul>
+            <li><a href="#intro">من نحن</a></li>
+            <li><a href="#predictions">تنبؤات السيولة</a></li>
+            <li><a href="#request">طلب السيولة</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- المقدمة -->
+    <header>
+        <h1>PosteVision</h1>
+        <p>حلول ذكية لتوزيع السيولة في الجزائر بوست</p>
+    </header>
+
+    <main>
+        <!-- قسم التعريف -->
+        <section id="intro">
+            <h2>من نحن؟</h2>
+            <p>نظام ذكي يعتمد على تحليل البيانات والتنبؤ باحتياجات السيولة لتطوير خدمات الجزائر بوست.</p>
+        </section>
+
+        <!-- قسم التنبؤ -->
+        <section id="predictions">
+            <h2>تنبؤات السيولة</h2>
+            <table>
+                <tr>
+                    <th>الفرع</th>
+                    <th>الاحتياجات النقدية</th>
+                    <th>التاريخ المتوقع</th>
+                </tr>
+                <tr>
+                    <td>الجزائر</td>
+                    <td>500,000 دينار</td>
+                    <td>2024-12-01</td>
+                </tr>
+                <tr>
+                    <td>وهران</td>
+                    <td>300,000 دينار</td>
+                    <td>2024-12-02</td>
+                </tr>
+                <tr>
+                    <td>قسنطينة</td>
+                    <td>400,000 دينار</td>
+                    <td>2024-12-03</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- قسم الطلب -->
+        <section id="request">
+            <h2>طلب السيولة</h2>
+            <form>
+                <label for="branch">اسم الفرع:</label>
+                <input type="text" id="branch" name="branch" required>
+
+                <label for="amount">المبلغ المطلوب:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <button type="submit">إرسال الطلب</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- قسم التواصل -->
+    <footer id="contact">
+        <h2>تواصل معنا</h2>
+        <p>لمزيد من المعلومات، يمكنك التواصل عبر البريد الإلكتروني: info@postevision.com</p>
+    </footer>
+
+    <!-- ربط ملف JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PosteVision</title>
+    <!-- ربط ملف CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- إضافة مكتبة Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav>
+        <ul>
+            <li><a href="#intro">من نحن</a></li>
+            <li><a href="#predictions">تنبؤات السيولة</a></li>
+            <li><a href="#request">طلب السيولة</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- المقدمة -->
+    <header>
+        <h1>PosteVision</h1>
+        <p>حلول ذكية لتوزيع السيولة في الجزائر بوست</p>
+    </header>
+
+    <main>
+        <!-- قسم التعريف -->
+        <section id="intro">
+            <h2>من نحن؟</h2>
+            <p>نظام ذكي يعتمد على تحليل البيانات والتنبؤ باحتياجات السيولة لتطوير خدمات الجزائر بوست.</p>
+        </section>
+
+        <!-- قسم التنبؤ -->
+        <section id="predictions">
+            <h2>تنبؤات السيولة</h2>
+            <canvas id="myChart" width="400" height="200"></canvas>
+            <script>
+                // بيانات وهمية تمثل استهلاك الأموال في 10 سنوات
+                const data = {
+                    labels: ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+                    datasets: [{
+                        label: 'استهلاك الأموال (بالملايين)',
+                        data: [500, 600, 700, 650, 750, 800, 850, 900, 950, 1000],
+                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 1
+                    }]
+                };
+
+                // إعداد الرسم البياني
+                const config = {
+                    type: 'line',
+                    data: data,
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                };
+
+                // إنشاء الرسم البياني
+                const myChart = new Chart(
+                    document.getElementById('myChart'),
+                    config
+                );
+            </script>
+        </section>
+
+        <!-- قسم الطلب -->
+        <section id="request">
+            <h2>طلب السيولة</h2>
+            <form>
+                <label for="branch">اسم الفرع:</label>
+                <input type="text" id="branch" name="branch" required>
+
+                <label for="amount">المبلغ المطلوب:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <button type="submit">إرسال الطلب</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- قسم التواصل -->
+    <footer id="contact">
+        <h2>تواصل معنا</h2>
+        <p>لمزيد من المعلومات، يمكنك التواصل عبر البريد الإلكتروني: postevision@gmail.com</p>
+    </footer>
+
+    <!-- ربط ملف JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
